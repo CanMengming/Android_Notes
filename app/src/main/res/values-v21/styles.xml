@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- 注：1.当我们在项目中创建values-v21文件夹后
+             2.values下面定义的任何样式、属性都需要values-v21中保留一份
+             -->
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/mainColor</item>
+        <item name="android:statusBarColor">@color/mainColor</item>
+
+        <!-- 全局动画过度样式
+             接受Animation.activity内容(新建样式)
+         -->
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+    </style>
+
+</resources>

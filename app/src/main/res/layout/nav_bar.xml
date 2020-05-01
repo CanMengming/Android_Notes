@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="@dimen/navBarHeight"
+    android:background="@color/mainColor"
+    android:paddingLeft="@dimen/marginSize"
+    android:paddingRight="@dimen/marginSize"
+    >
+    <!--
+     NavgationBar分成三个部分
+     1.左部__退出  2.中间__文字显示(页面标题)  3.右部__个人中心图片显示
+    -->
+
+    <!--android:gravity ：view里面的内容在这个view中的位置
+        android:layout_gravity ：这个view相对于它父view的位置(center_vertical垂直居中)
+        -->
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/back"
+        android:layout_gravity="center_vertical"
+        />
+
+    <!-- layout_gravity= "center"表示垂直与水平都居中
+                       = "right| center_vertical"靠右并且竖直方向居中
+     -->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/navBarTitleSize"
+        android:textColor="@color/white"
+        android:text="慕课音乐"
+        android:layout_gravity="center"
+        />
+
+    <ImageView
+        android:id="@+id/iv_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/me"
+        android:layout_gravity="right|center_vertical"
+        />
+
+</FrameLayout>

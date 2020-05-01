@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 创建动画执行时间 -->
+    <integer name="anim_duration">400</integer>
+
+</resources>

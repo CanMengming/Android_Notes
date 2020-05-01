@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.androidsoft.mynotes_2017144235">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="notes"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".EditActivity"/>
+        <activity android:name=".UserSettingsActivity"/>
+        <activity android:name=".LoginActivity"/>
+        <activity android:name=".RegistActivity"/>
+        <activity android:name=".ChangePasswordActivity"/>
+        <activity android:name=".MeActivity"/>
+        <activity android:name=".MainActivity"/>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".acitivity.LoginActivity"
+    android:orientation="vertical">
+
+    <!-- <include layout= "">
+        该属性可以帮助我们在一个layout中去引入其他layout布局
+        <include layout="@layout/nav_bar"/> 表示引入nav_bar.xml中的布局
+    -->
+    <include layout="@layout/nav_bar"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/logo2"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/marginSize"
+        />
+
+    <Views.InputView
+        android:id="@+id/input_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/inputViewHeight"
+        android:layout_marginTop="@dimen/marginSize"
+        app:input_icon="@mipmap/phone"
+        app:input_hint="手机号"
+        app:is_password="false"
+        />
+
+    <!-- 分割线(封装—styles.xml)
+         分割线在全局被被多处使用并且具有统一的样式
+         与NavigationBar,inputView(拥有复杂嵌套格式)不同，分割线具有单独的样式
+
+         如何定义达到全局的复用?
+         可以在values中styles.xml中定义一个全局复用的样式
+     -->
+    <View
+        style="@style/line"/>
+
+
+    <Views.InputView
+        android:id="@+id/input_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/inputViewHeight"
+        app:input_icon="@mipmap/password"
+        app:input_hint="密码"
+        app:is_password="true"
+        />
+
+    <View
+        style="@style/line"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/marginSize"
+        android:text="立即注册"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/infoSize"
+        android:textColor="@color/mainColor"
+        android:onClick="onRegist"
+        />
+
+    <!-- 登录按钮进行全局封装 -->
+    <Button
+        style="@style/loginBtn"
+        android:text="登 录"
+        android:layout_marginTop="@dimen/marginSize"
+        android:onClick="onLoginClick"
+        />
+
+
+
+</LinearLayout>

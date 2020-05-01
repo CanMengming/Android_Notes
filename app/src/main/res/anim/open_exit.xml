@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 打开activity时，原activity(退出的activity)所执行的动画
+         以中心缩放动画
+         注：如果不指定android缩放中心，则打开新activity时，原activity不以中心缩放
+    -->
+    <scale
+        android:fromXScale="1.0"
+        android:fromYScale="1.0"
+        android:toXScale="0.8"
+        android:toYScale="0.8"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:duration="@integer/anim_duration"
+        />
+</set>

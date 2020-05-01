@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+       退出activity，重新显示的activity的动画
+    -->
+    <translate
+        android:fromXDelta="0.8"
+        android:fromYDelta="0.8"
+        android:toXDelta="1.0"
+        android:toYDelta="1.0"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:duration="@integer/anim_duration"
+        />
+
+</set>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- selector下提供四种状态
+     android:state_focused="true" android:drawable="高亮状态下显示的图片"
+                                                      —View处于高亮状态
+     android:state_pressed="true" android:drawable="" —按下状态
+     android:state_selected="true" android:drawable=""—处于选中状态
+     -->
+    <!-- View高亮效果 -->
+    <item android:state_focused="true" android:drawable="@drawable/commit_btn_h"/>
+    <item android:state_pressed="true" android:drawable="@drawable/commit_btn_h"/>
+    <item android:state_selected="true" android:drawable="@drawable/commit_btn_h"/>
+    <!-- View默认效果 -->
+    <item android:drawable="@drawable/commit_btn_n"/>
+</selector>

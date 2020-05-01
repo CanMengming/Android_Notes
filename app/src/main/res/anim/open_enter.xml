@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 打开activity时，新进入的activity所执行的动画
+         从右到左的动画
+         android:duration="@integer/anim_duration"——动画执行时间
+                            integer.xml中anim_duration中定义全局动画执行时间
+    -->
+    <translate
+        android:fromXDelta="100%"
+        android:toXDelta="0%"
+        android:duration="@integer/anim_duration"
+        />
+
+</set>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 尺寸 -->
+<resources>
+    <dimen name="marginSize">16dp</dimen>
+    <dimen name="navBarTitleSize">22sp</dimen>
+    <dimen name="infoSize">14sp</dimen>
+    <dimen name="textSize">18sp</dimen>
+    <dimen name="titleSize">35dp</dimen>
+    <dimen name="timeSize">20dp</dimen>
+
+    <dimen name="navBarHeight">56dp</dimen>
+    <dimen name="inputViewHeight">44dp</dimen>
+    <dimen name="btnHeight">44dp</dimen>
+    <dimen name="itemHigh">44dp</dimen>
+    <dimen name="editHight">300dp</dimen>
+    <dimen name="textViewHigh">50dp</dimen>
+    <dimen name="dividerHeight">1dp</dimen>
+    <dimen name="paddingBottom">15dp</dimen>
+    <dimen name="paddingTop">9dp</dimen>
+
+
+    <dimen name="radius">5dp</dimen>
+
+
+</resources>

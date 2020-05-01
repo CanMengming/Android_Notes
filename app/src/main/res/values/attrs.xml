@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 自定义属性 -->
+<resources>
+
+    <!-- 声明样式 -->
+    <declare-styleable name="inputView">
+        <!-- 输入框前面的图表 format="reference"表示接受图片资源文件 -->
+        <attr name="input_icon" format="reference"></attr>
+        <!-- 输入框的提示内容format="string"表示接受String类型数据 -->
+        <attr name="input_hint" format="string"></attr>
+        <!-- 输入框是否要以密文进行展示format="boolean"表示接受boolean类型数据 -->
+        <attr name="is_password" format="boolean"></attr>
+    </declare-styleable>
+
+</resources>

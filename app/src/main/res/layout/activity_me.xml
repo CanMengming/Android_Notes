@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".acitivity.MeActivity"
+    android:orientation="vertical">
+
+    <include layout="@layout/nav_bar"/>
+
+    <!-- textStyle="bold"文字加粗 -->
+    <TextView
+        android:id="@+id/tv_userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="用户名:"
+        android:textSize="@dimen/textSize"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/marginSize"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/itemHigh"
+        android:text="修改密码"
+        android:textSize="@dimen/textSize"
+        android:paddingLeft="@dimen/marginSize"
+        android:gravity="center"
+        android:onClick="changePassword"
+        android:background="@drawable/item_commit_select"
+        />
+
+    <Button
+        style="@style/loginBtn"
+        android:text="退出登录"
+        android:layout_marginTop="@dimen/marginSize"
+        android:onClick="onLogoutClick"
+        />
+
+</LinearLayout>
